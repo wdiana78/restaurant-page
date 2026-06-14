@@ -1,0 +1,258 @@
+/* - Reset & Base - */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #fff8f0;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+/* - Header - */
+header {
+  background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px 44px;
+  color: #ffffff;
+}
+
+.header-overlay h1 {
+  font-size: 3.2rem;
+  letter-spacing: 3px;
+  color: #ffd166;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.header-overlay .tagline {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #ffe8b0;
+  margin-bottom: 28px;
+}
+
+/* - Nav - */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: #ffd166;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: 1px solid #ffd166;
+  padding: 6px 18px;
+  border-radius: 20px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+header nav a:hover {
+  background-color: #ffd166;
+  color: #1a1a1a;
+}
+
+/* - Main - */
+main {
+  max-width: 1000px;
+  margin: 56px auto;
+  padding: 0 24px;
+}
+
+/* - Sections - */
+section {
+  margin-bottom: 64px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #e05c00;
+  border-bottom: 3px solid #ffd166;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+/* - About Grid - */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.about-grid p {
+  font-size: 1.05rem;
+  color: #3d3d3d;
+}
+
+.about-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* - Dishes Grid - */
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.dish-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dish-info {
+  padding: 16px;
+}
+
+.dish-info h3 {
+  font-size: 1.1rem;
+  color: #e05c00;
+  margin-bottom: 6px;
+}
+
+.dish-info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.price {
+  display: inline-block;
+  background-color: #ffd166;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* - Menu CTA - */
+.menu-cta {
+  background: linear-gradient(135deg, #e05c00, #ff8c42);
+  color: #ffffff;
+  text-align: center;
+  padding: 56px 32px;
+  border-radius: 16px;
+}
+
+.menu-cta h2 {
+  color: #ffffff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.menu-cta p {
+  font-size: 1.05rem;
+  color: #ffe8cc;
+  margin-bottom: 28px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #ffd166;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.menu-btn:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* - Contact - */
+#contact address {
+  font-style: normal;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#contact ul li {
+  background-color: #ffffff;
+  border-left: 4px solid #ffd166;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+#contact ul li .icon {
+  margin-right: 6px;
+}
+
+#contact ul li a {
+  color: #e05c00;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+#contact ul li a:hover {
+  text-decoration: underline;
+}
+
+/* - Footer - */
+footer {
+  text-align: center;
+  padding: 32px 20px;
+  background-color: #1a1a1a;
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+footer strong {
+  color: #ffd166;
+}
