@@ -1,4 +1,4 @@
-/* - Reset & Base - */
+/* - Global- */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ header {
   min-height: 420px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; not so necessary since header-overlay hass width=100% */
 }
 
 .header-overlay {
@@ -36,7 +36,7 @@ header {
   letter-spacing: 3px;
   color: #ffd166;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .header-overlay .tagline {
@@ -226,7 +226,7 @@ section h2 {
   padding: 14px 18px;
   border-radius: 8px;
   font-size: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
 #contact ul li .icon {
